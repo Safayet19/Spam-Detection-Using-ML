@@ -33,8 +33,12 @@ model = MultinomialNB()
 # Train the model on training data
 model.fit(X_train_counts, y_train)
 
+
+#====================================================================================
+
 # Streamlit app UI
 st.set_page_config(page_title="Spam Detector", page_icon="🔍")
+
 st.markdown(
     """
     <div style='text-align: center;'>
@@ -52,7 +56,7 @@ def predict(message):
     return result
 
 # Input box
-user_input = st.text_input("📥 Type your suspicious message below:")
+user_input = st.text_input("📥 Enter your suspicious message below:")
 
 # Check button
 if st.button("🚀 Check Message"):
