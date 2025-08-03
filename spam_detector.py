@@ -5,7 +5,7 @@ from sklearn.naive_bayes import MultinomialNB
 import streamlit as st  # Streamlit: turns Python code into a web app
 
 # Load data
-data = pd.read_csv(r"C:\Users\SAFAYET\Downloads\spam.csv")
+data = pd.read_csv("spam.csv")
 
 # Remove duplicate rows
 data.drop_duplicates(inplace=True)
